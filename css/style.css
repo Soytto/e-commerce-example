@@ -102,8 +102,9 @@ header {
 }
 
 @media screen and (max-width: 575px) {
-    header {
-        overflow: visible;
+    .navbar__list {
+        margin-top: -100%;
+        transition: all 1s ease-in-out;
     }
     .menu--active {
         flex-direction: column;
@@ -114,7 +115,7 @@ header {
         justify-content: space-evenly;
         padding-right: 0;
         margin: 0 auto;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 }
 

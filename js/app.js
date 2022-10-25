@@ -86,7 +86,10 @@ navbarMenu.addEventListener("click", () => {
     // ! si width de window < ou = a 565 px
     if(window.innerWidth <= 565){
         // ! quand toggle actif, body overflow-y hidden sinon visible
-    document.body.style.overflowY = document.body.style.overflowY === "hidden" ? "visible" : "hidden";}
+    document.body.style.overflowY = document.body.style.overflowY === "hidden" ? "visible" : "hidden"
+
+    document.querySelector("header").style.overflow = document.querySelector("header").style.overflow === "visible" ? "hidden" : "visible"
+}
 })
 
 // * ==================== * //
